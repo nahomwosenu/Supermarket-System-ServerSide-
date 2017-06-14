@@ -87,7 +87,7 @@ function getTotalCost($cart_id){
    $price=getItemPrice($item);
    $tax=getItemTax($item);
    $vat=getItemVat($item);
-   $shipingCost=getShipingCost($item);
+   $shipingCost=getShipingCost($item); 
    $total=$total+($price*$tax)+$vat+$shipingCost;
   }
   return $total;
